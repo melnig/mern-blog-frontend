@@ -34,7 +34,11 @@ export const FullPost = () => {
       <Post
         id={data._id}
         title={data.title}
-        imageUrl={data.imageUrl ? `http://localhost:4444${data.imageUrl}` : ""}
+        imageUrl={
+          data.imageUrl
+            ? `https://mern-blog-frontend-omega.vercel.app/${data.imageUrl}`
+            : ""
+        }
         // imageUrl="https://upload.wikimedia.org/wikipedia/commons/5/5a/Copia_de_Crema_con_Rosa_Pastel_y_P%C3%BArpura_Iconos_Regalo_Etiqueta.png"
         user={data.user}
         createdAt={data.createdAt}
