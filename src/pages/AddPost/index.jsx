@@ -127,7 +127,7 @@ export const AddPost = () => {
           </Button>
           <img
             className={styles.image}
-            src={`https://mern-blog-frontend-omega.vercel.app${imageUrl}`}
+            src={`${process.env.REACT_APP_API_URL}${imageUrl}`}
             alt="Uploaded"
           />
         </>
